@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-decoration:  none;
+}
+:root {
+    --primary: #e74c3c;
+    --font1:rgb(42, 40, 40);
+    --font2:#a39d9d;
+    --title1: 1.5rem;
+    --title2: 1rem;
+    --title3:.9rem;
+}
+nav {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.nav-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo {
+    width: 150px;
+}
+.nav-menu a {
+    padding: 10px 20px;
+    
+    color: var(--font2);
+}
+.nav-profile {
+    
+    display: flex;
+    align-items: center;
+}
+.nav-profile-img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nav-profile div p:last-child{
+    color: var(--font2);
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    padding: 30px 0;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.blog{
+    
+    width: 70%;
+}
+.trending{
+    
+    width: 24%;
+}
+.title {
+    font-size: var(--title1);
+    border-bottom: 3px solid #000;
+    width: fit-content ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 120px);
+    grid-gap: 20px;
+}
+.blog-grid-items{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-grid  a:first-child{
+    grid-row: 1 / span 3;
+}
+.blog-grid-items-title{
+    font-size: var(--title2);
+    color: var(--font1);
+    height: 50px;
+    
+    overflow: hidden;
+}
+.blog-grid-items-desc{
+    font-size: var(--title3);
+    color: var(--font2);
+}
+.blog-grid-items-time{
+    font-size: var(--title3);
+    color: var(--font2);
+    margin-top: 10px;
+}
+.viewblog{
+    width: 150px;
+    height: 35px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.trending-items{
+    display: flex;
+    
+    margin-bottom: 10px;
+}
+.trending-order{
+   
+    margin-right: 20px;
+    color: var(--font1);
+}
+.trending-list{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.trending-title{
+    font-size: var(--title2);
+    color: var(--font1);
+
+}
+.trending-time{
+    font-size: var(--title3);
+    color: var(--font2);
+    margin-top: 10px;
+}
